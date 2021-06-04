@@ -23,9 +23,9 @@ a {
 .title {
   margin: 0;
   padding: 0;
-  width: 95px;
-  height: 17px;
-  line-height: 16.8px;
+  min-width: 95px;
+  min-height: 17px;
+  line-height: 23px;
   font-size: 14px;
   font-weight: normal;
 }
@@ -33,13 +33,17 @@ a {
 .logo {
   width: 54px;
   height: 11px;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .title__span-accent {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 23px;
+  width: 39px;
   background-color: #4A90E2;
   border-radius: 3px;
-  padding: 3px 5px;
+  text-align: center;
 }
 
 .nav {
@@ -88,6 +92,8 @@ a {
 
 .news-category {
   display: inline-block;
+  width: 62px;
+  height: 22px;
   background-color: #4A90E2;
   position: absolute;
   line-height: 22px;
@@ -96,7 +102,7 @@ a {
   text-align: center;
   vertical-align: middle;
   margin: 0;
-  padding: 4px 12px 2px;
+  padding: 0;
   border-radius: 3px;
 }
 
@@ -194,7 +200,7 @@ a {
   font-weight: 700;
   line-height: 30px;
   font-size: 20px;
-  margin: 0 20px 23px;
+  margin: 0 20px 30px;
 }
 
 .two-columns {
@@ -242,7 +248,7 @@ a {
   border-radius: 5px;
   z-index: 1;
   opacity: 1;
-  margin: -125px 20px 0;
+  margin: -130px 20px 0;
 }
 
 .main-news__category {
@@ -328,6 +334,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   width: 270px;
   min-height: 429px;
 }
